@@ -1,0 +1,15 @@
+.navbar{
+    background-color: bisque;
+}
+
+footer{
+    background-color: bisque;
+    height: 55px;
+    margin: 0;
+    top: 50px;
+}
+
+footer a{
+    display: flexbox;
+    margin: 0;
+}
