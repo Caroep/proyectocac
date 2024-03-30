@@ -9,7 +9,14 @@ footer{
     top: 50px;
 }
 
-footer a{
-    display: flexbox;
-    margin: 0;
+footer{
+    text-align: center;
+}
+
+footer p{
+    display: inline-block;
+}
+
+form{
+    width: 100%;
 }
