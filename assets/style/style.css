@@ -41,7 +41,7 @@ input{
     margin: 30px 0px;
 }
 
-.card col{ 
+.card{ 
     display: inline-block; 
-    width: 100%; 
+    margin: 3rem 0rem;
 }
