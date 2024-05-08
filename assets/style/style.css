@@ -45,3 +45,19 @@ input{
     display: inline-block; 
     margin: 3rem 0rem;
 }
+
+.checkboxMenu{
+    display: grid;
+    grid-row-gap: 2vh;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.checkboxMenu .checkboxOption{
+    display: flex;
+    flex-direction: row;
+
+    input{
+        max-width: 10vw;
+        max-height: auto;
+    }
+}
