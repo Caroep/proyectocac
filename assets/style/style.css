@@ -4,9 +4,9 @@
 
 footer{
     background-color: bisque;
-    height: 55px;
+    height: 6.5vh;
     margin: 0;
-    top: 50px;
+    top: 50vh;
 }
 
 footer{
@@ -23,7 +23,7 @@ form{
 
 form {
     padding: 1em;
-    border: 1px solid #ccc;
+    border: 0.5vw solid #ccc;
     border-radius: 1em;
   }
 
@@ -38,7 +38,8 @@ input{
 }
 
 .title, .content{
-    margin: 30px 0px;
+    margin: 9vh 0px;
+    /* margin: 50px 0px; */
 }
 
 .card{ 

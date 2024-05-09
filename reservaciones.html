@@ -11,12 +11,44 @@
   <!-- Script de Include HTML (sacado de W3-School) -->
   <script src="assets/scripts/template_include.js"></script>
 
+  <!-- Script de validación de formulario (al ser corto y no reutilizable para otro formulario, decidimos colocarlo dentro del html) -->
+  <script>
+    function validarFormulario() {
+      var name = document.getElementById("name").value
+      var phone = document.getElementById("phone").value
+      var mail = document.getElementById("mail").value
+      var checkboxes = document.querySelectorAll('input[type=checkbox]:checked')
+
+      let casillaMarcada = false
+      if(checkboxes.length > 0){
+        casillaMarcada = true
+      }
+
+
+      if (name === '') {
+        alert("El nombre no puede estar vacío")
+        event.preventDefault();
+      } else if (phone === '' || mail === '') {
+        alert("Debe brindar al menos un medio de contacto (teléfono o correo electrónico)")
+        event.preventDefault();
+      } else if(!casillaMarcada) {
+        alert("Debe seleccionar al menos un tratamiento")
+        event.preventDefault();
+      } else{
+        alert("Información enviada correctamente")
+      }
+    }
+
+  </script>
+
 </head>
 
-<!-- Incluir Navbar -->
+<!-- Incluir Base de Navbar -->
 <div include-html="assets/templates/navbar.html"></div>
 
+
 <body>
+  <!-- Carousel con Bootstrap -->
   <div id="carousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
@@ -41,11 +73,14 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
+
   <div class="title">
     <h1>Haz tu reservación aqui</h1>
   </div>
   <div>
-    <form action="/my-handling-form-page" method="post">
+
+    <!-- Formulario -->
+    <form onsubmit="validarFormulario()" method="post">
       <div class="formulario">
         <ul>
           <li>
@@ -54,13 +89,14 @@
           </li>
           <li>
             <label for="phone">Teléfono</label>
-            <input type="text" class="phone" id="phone" placeholder="Número sin 0 y 15 ni guión" />
+            <input type="number" class="phone" id="phone" placeholder="Número sin 0 y 15 ni guión" />
           </li>
           <li>
             <label for="mail">Correo electrónico</label>
             <input type="email" class="mail" id="mail" placeholder="name@example.com" />
           </li>
           <li>
+            <!-- Checkbox del formulario -->
             <label>Selecciona los tratamientos deseados:</label>
             <div class="checkboxMenu">
               <div class="checkboxOption">
@@ -99,7 +135,7 @@
             <textarea id="msg" name="user_message" rows="3" style="width: 100%"></textarea>
           </li>
           <li class="button">
-            <button type="submit">Envíe su mensaje</button>
+            <input type="submit">
           </li>
         </ul>
       </div>
@@ -117,6 +153,7 @@
 <!-- Incluir Footer -->
 <footer include-html="assets/templates/footer.html"></footer>
 
+<!-- Llamar a función que incluye los templates -->
 <script>includeHTML()</script>
 
 </html>
