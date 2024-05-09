@@ -31,6 +31,23 @@ form {
     list-style: none;
     padding: 0;
     margin: 0;
+
+    li{
+        padding-top: 0.5vh;
+        padding-bottom: 0.5vh;
+    }
+}
+
+.formulario .radioGroup{
+    display: flex;
+    flex-direction: row;
+}
+
+.formulario .radioLine{
+    padding-right: 2vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 input{
