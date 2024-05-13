@@ -4,9 +4,9 @@
 
 footer{
     background-color: bisque;
-    height: 55px;
+    height: 6.5vh;
     margin: 0;
-    top: 50px;
+    top: 50vh;
 }
 
 footer{
@@ -23,7 +23,7 @@ form{
 
 form {
     padding: 1em;
-    border: 1px solid #ccc;
+    border: 0.5vw solid #ccc;
     border-radius: 1em;
   }
 
@@ -31,6 +31,23 @@ form {
     list-style: none;
     padding: 0;
     margin: 0;
+
+    li{
+        padding-top: 0.5vh;
+        padding-bottom: 0.5vh;
+    }
+}
+
+.formulario .radioGroup{
+    display: flex;
+    flex-direction: row;
+}
+
+.formulario .radioLine{
+    padding-right: 2vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 input{
@@ -38,10 +55,27 @@ input{
 }
 
 .title, .content{
-    margin: 30px 0px;
+    margin: 9vh 0px;
+    /* margin: 50px 0px; */
 }
 
 .card{ 
     display: inline-block; 
     margin: 3rem 0rem;
+}
+
+.checkboxMenu{
+    display: grid;
+    grid-row-gap: 2vh;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.checkboxMenu .checkboxOption{
+    display: flex;
+    flex-direction: row;
+
+    input{
+        max-width: 10vw;
+        max-height: auto;
+    }
 }
