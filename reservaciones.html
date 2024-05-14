@@ -66,13 +66,36 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-  <div class="title">
+  <!-- <div class="title">
     <h1>Haz tu reservación aqui</h1>
-  </div>
+  </div>-->
   <div>
     <form action="/my-handling-form-page" method="post">
-      <div class="formulario">
-        <ul>
+        <h2 class="title">Ingresar sus datos para realizar su reservación</h2>
+        <div class="form-container">
+          <div class="group">
+            <input type="text" id="name" class="form-input" placeholder=" " />
+            <label for="name" class="form-label">Nombre</label>
+            <span class="form-line"></span>
+          </div>
+          <div class="group">
+            <input type="text" id="phone" class="form-input" placeholder=" " />
+            <label for="phone" class="form-label">Teléfono</label>
+            <span class="form-line"></span>
+          </div>
+          <div class="group">
+            <input type="email" id="mail" class="form-input" placeholder=" " />
+            <label for="mail" class="form-label">Correo electrónico</label>
+            <span class="form-line"></span>
+          </div>
+          <div class="group">
+            <textarea id="msg" class="form-input" rows="3"></textarea>
+            <label for="msg" class="form-label">Observaciones</label>
+            <span class="form-line"></span>
+          </div>
+          <input type="submit" class="form-submit" value="Reservar">
+        </div>
+       <!--<ul>
           <li>
             <label for="name">Nombre</label>
             <input type="text" class="name" id="name" placeholder="Nombre Completo" />
@@ -92,8 +115,7 @@
           <li class="button">
             <button type="submit">Envíe su mensaje</button>
           </li>
-        </ul>
-      </div>
+        </ul>--> 
     </form>
   </div>
 

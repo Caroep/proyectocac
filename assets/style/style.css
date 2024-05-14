@@ -1,33 +1,85 @@
-.navbar{
-    background-color: bisque;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-footer{
-    background-color: bisque;
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #f9f8e7;
+    background-image: radial-gradient(#3a2009 0.30000000000000004px, transparent 0.30000000000000004px), radial-gradient(#3a2009 0.30000000000000004px, #f9f8e7 0.30000000000000004px);
+    background-size: 12px 12px;
+    background-position: 0 0, 6px 6px;
+}
+
+.navbar {
+    background-color: #EBD9B4;
+}
+
+footer {
+    background-color: #EBD9B4;
+    text-align: center;
     height: 55px;
     margin: 0;
     top: 50px;
 }
 
-footer{
-    text-align: center;
-}
-
-footer p{
+footer p {
     display: inline-block;
 }
 
-form{
-    width: 100%;
+form {
+    display: inline-flexbox;
+    width: 90%;
+    max-width: 400%;
+    padding: 2em 3em;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px rgb(0,0, 0 / 30%);
+    text-align: justify;
 }
 
-form {
-    padding: 1em;
-    border: 1px solid #ccc;
-    border-radius: 1em;
-  }
+.title{
+    font-size: 3rem;
+    margin-bottom: .5em;
 
-.formulario ul{
+}
+
+.form-container{
+    margin-top: 5em;
+    display: grid;
+    gap: .5em;
+}
+
+.group{
+    position: relative;
+    --color: #5757577e;
+
+}
+
+.form-input{
+    width: 100%;
+    background: none;
+    color: #706c6c;
+    font-size: 1rem;
+    padding: .8em .3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--color);
+}
+
+.form-label{
+    color: var(--color);
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    
+}
+
+
+/*.formulario ul{
     list-style: none;
     padding: 0;
     margin: 0;
@@ -35,13 +87,14 @@ form {
 
 input{
     width: 100%;
-}
+}*/
 
-.title, .content{
+.title,
+.content {
     margin: 30px 0px;
 }
 
-.card{ 
-    display: inline-block; 
+.card {
+    display: inline-block;
     margin: 3rem 0rem;
 }

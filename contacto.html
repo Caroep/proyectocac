@@ -98,9 +98,32 @@
     </div>
   </div>
   <div>
-    <h3>Cómo podemos contactarte?</h3>
     <form action="/my-handling-form-page" method="post">
-      <div class="formulario">
+      <h2 class="title">Deseas ingresar datos para contactarte?</h2>
+        <div class="form-container">
+          <div class="group">
+            <input type="text" id="name" class="form-input" placeholder=" " />
+            <label for="name" class="form-label">Nombre</label>
+            <span class="form-line"></span>
+          </div>
+          <div class="group">
+            <input type="text" id="phone" class="form-input" placeholder=" " />
+            <label for="phone" class="form-label">Teléfono</label>
+            <span class="form-line"></span>
+          </div>
+          <div class="group">
+            <input type="email" id="mail" class="form-input" placeholder=" " />
+            <label for="mail" class="form-label">Correo electrónico</label>
+            <span class="form-line"></span>
+          </div>
+          <div class="group">
+            <textarea id="msg" class="form-input" rows="3"></textarea>
+            <label for="msg" class="form-label">Observaciones</label>
+            <span class="form-line"></span>
+          </div>
+          <input type="submit" class="form-submit" value="Enviar Datos">
+        </div>
+      <!-- <div class="formulario">
         <ul>
           <li>
             <label for="name">Nombre Completo</label>
@@ -122,7 +145,7 @@
             <button type="submit">Envíe su mensaje</button>
           </li>
         </ul>
-      </div>
+      </div> -->
     </form>
   </div>
 
