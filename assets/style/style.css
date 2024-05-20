@@ -1,13 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-=======
-=======
+.navbar{
+    background-color: bisque;
+}
+ 
 footer{
     background-color: bisque;
     height: 6.5vh;
@@ -15,103 +9,25 @@ footer{
     top: 50vh;
 }
 
->>>>>>> parent of 7358d7f (Revert "Merge branch 'main' of https://github.com/Caroep/proyectocac")
 footer{
-    background-color: bisque;
-    height: 6.5vh;
-    margin: 0;
-    top: 50vh;
->>>>>>> parent of 7358d7f (Revert "Merge branch 'main' of https://github.com/Caroep/proyectocac")
-}
-
-<<<<<<< HEAD
-body {
-    font-family: "Roboto", sans-serif;
-    background-color: #f9f8e7;
-    background-image: radial-gradient(#3a2009 0.30000000000000004px, transparent 0.30000000000000004px), radial-gradient(#3a2009 0.30000000000000004px, #f9f8e7 0.30000000000000004px);
-    background-size: 12px 12px;
-    background-position: 0 0, 6px 6px;
-}
-
-.navbar {
-    background-color: #EBD9B4;
-}
-
-footer {
-    background-color: #EBD9B4;
     text-align: center;
-    height: 55px;
-=======
-footer{
-    background-color: bisque;
-    height: 6.5vh;
->>>>>>> parent of 7358d7f (Revert "Merge branch 'main' of https://github.com/Caroep/proyectocac")
-    margin: 0;
-    top: 50vh;
 }
 
-footer p {
+footer p{
     display: inline-block;
 }
 
-form {
-    display: inline-flexbox;
-    width: 90%;
-    max-width: 400%;
-    padding: 2em 3em;
-    border-radius: 10px;
-    box-shadow: 0 5px 10px -5px rgb(0,0, 0 / 30%);
-    text-align: justify;
+form{
+    width: 100%;
 }
 
-<<<<<<< HEAD
-.title{
-    font-size: 3rem;
-    margin-bottom: .5em;
-=======
 form {
     padding: 1em;
     border: 0.5vw solid #ccc;
     border-radius: 1em;
   }
->>>>>>> parent of 7358d7f (Revert "Merge branch 'main' of https://github.com/Caroep/proyectocac")
 
-}
-
-.form-container{
-    margin-top: 5em;
-    display: grid;
-    gap: .5em;
-}
-
-.group{
-    position: relative;
-    --color: #5757577e;
-
-}
-
-.form-input{
-    width: 100%;
-    background: none;
-    color: #706c6c;
-    font-size: 1rem;
-    padding: .8em .3em;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid var(--color);
-}
-
-.form-label{
-    color: var(--color);
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    left: 5px;
-    
-}
-
-
-/*.formulario ul{
+.formulario ul{
     list-style: none;
     padding: 0;
     margin: 0;
@@ -136,65 +52,18 @@ form {
 
 input{
     width: 100%;
-}*/
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-.title,
-.content {
-    margin: 30px 0px;
-    padding: 0 24px;
-=======
-.title, .content{
-    margin: 9vh 0px;
-    /* margin: 50px 0px; */
->>>>>>> parent of 7358d7f (Revert "Merge branch 'main' of https://github.com/Caroep/proyectocac")
-=======
-.title, .content{
-    margin: 9vh 0px;
-    /* margin: 50px 0px; */
->>>>>>> parent of 7358d7f (Revert "Merge branch 'main' of https://github.com/Caroep/proyectocac")
-=======
-.title, .content{
-    margin: 9vh 0px;
-    /* margin: 50px 0px; */
->>>>>>> parent of 7358d7f (Revert "Merge branch 'main' of https://github.com/Caroep/proyectocac")
 }
 
-.card {
-    display: inline-block;
+.title, .content{
+    margin: 9vh 0px;
+    /* margin: 50px 0px; */
+}
+
+.card{ 
+    display: inline-block; 
     margin: 3rem 0rem;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-.img-zoom-container {
-    overflow: hidden;
-}
-
-.img-zoom-container img {
-    transition: all 0.2s ease-out !important;
-}
-
-.card:hover .img-zoom-container > img {
-    transform: scale(1.2);
-}
-
-
-.btn {
-    transition: all 0.2s ease-out !important;
-}
-.btn:hover {
-    padding-left: 25px;
-    padding-right: 25px;
-    background-color: #ffb007  !important;
-=======
-=======
->>>>>>> parent of 7358d7f (Revert "Merge branch 'main' of https://github.com/Caroep/proyectocac")
-=======
->>>>>>> parent of 7358d7f (Revert "Merge branch 'main' of https://github.com/Caroep/proyectocac")
 .checkboxMenu{
     display: grid;
     grid-row-gap: 2vh;
@@ -209,11 +78,4 @@ input{
         max-width: 10vw;
         max-height: auto;
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> parent of 7358d7f (Revert "Merge branch 'main' of https://github.com/Caroep/proyectocac")
-=======
->>>>>>> parent of 7358d7f (Revert "Merge branch 'main' of https://github.com/Caroep/proyectocac")
-=======
->>>>>>> parent of 7358d7f (Revert "Merge branch 'main' of https://github.com/Caroep/proyectocac")
 }
