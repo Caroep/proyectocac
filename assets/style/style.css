@@ -6,6 +6,7 @@
     box-sizing: border-box;
 }
 
+<<<<<<< HEAD
 body {
     font-family: "Roboto", sans-serif;
     background-color: #f9f8e7;
@@ -22,8 +23,13 @@ footer {
     background-color: #EBD9B4;
     text-align: center;
     height: 55px;
+=======
+footer{
+    background-color: bisque;
+    height: 6.5vh;
+>>>>>>> parent of 7358d7f (Revert "Merge branch 'main' of https://github.com/Caroep/proyectocac")
     margin: 0;
-    top: 50px;
+    top: 50vh;
 }
 
 footer p {
@@ -40,9 +46,17 @@ form {
     text-align: justify;
 }
 
+<<<<<<< HEAD
 .title{
     font-size: 3rem;
     margin-bottom: .5em;
+=======
+form {
+    padding: 1em;
+    border: 0.5vw solid #ccc;
+    border-radius: 1em;
+  }
+>>>>>>> parent of 7358d7f (Revert "Merge branch 'main' of https://github.com/Caroep/proyectocac")
 
 }
 
@@ -83,16 +97,39 @@ form {
     list-style: none;
     padding: 0;
     margin: 0;
+
+    li{
+        padding-top: 0.5vh;
+        padding-bottom: 0.5vh;
+    }
+}
+
+.formulario .radioGroup{
+    display: flex;
+    flex-direction: row;
+}
+
+.formulario .radioLine{
+    padding-right: 2vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 input{
     width: 100%;
 }*/
 
+<<<<<<< HEAD
 .title,
 .content {
     margin: 30px 0px;
     padding: 0 24px;
+=======
+.title, .content{
+    margin: 9vh 0px;
+    /* margin: 50px 0px; */
+>>>>>>> parent of 7358d7f (Revert "Merge branch 'main' of https://github.com/Caroep/proyectocac")
 }
 
 .card {
@@ -100,6 +137,7 @@ input{
     margin: 3rem 0rem;
 }
 
+<<<<<<< HEAD
 .img-zoom-container {
     overflow: hidden;
 }
@@ -120,4 +158,20 @@ input{
     padding-left: 25px;
     padding-right: 25px;
     background-color: #ffb007  !important;
+=======
+.checkboxMenu{
+    display: grid;
+    grid-row-gap: 2vh;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.checkboxMenu .checkboxOption{
+    display: flex;
+    flex-direction: row;
+
+    input{
+        max-width: 10vw;
+        max-height: auto;
+    }
+>>>>>>> parent of 7358d7f (Revert "Merge branch 'main' of https://github.com/Caroep/proyectocac")
 }
