@@ -1,81 +1,123 @@
-.navbar{
-    background-color: bisque;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
-footer{
-    background-color: bisque;
-    height: 6.5vh;
+* {
     margin: 0;
-    top: 50vh;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-footer{
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #f9f8e7;
+    background-image: radial-gradient(#3a2009 0.30000000000000004px, transparent 0.30000000000000004px), radial-gradient(#3a2009 0.30000000000000004px, #f9f8e7 0.30000000000000004px);
+    background-size: 12px 12px;
+    background-position: 0 0, 6px 6px;
+}
+
+.navbar {
+    background-color: #EBD9B4;
+}
+
+footer {
+    background-color: #EBD9B4;
     text-align: center;
+    height: 55px;
+    margin: 0;
+    top: 50px;
 }
 
-footer p{
+footer p {
     display: inline-block;
 }
 
-form{
-    width: 100%;
+form {
+    display: inline-flexbox;
+    width: 90%;
+    max-width: 400%;
+    padding: 2em 3em;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px rgb(0,0, 0 / 30%);
+    text-align: justify;
 }
 
-form {
-    padding: 1em;
-    border: 0.5vw solid #ccc;
-    border-radius: 1em;
-  }
+.title{
+    font-size: 3rem;
+    margin-bottom: .5em;
 
-.formulario ul{
+}
+
+.form-container{
+    margin-top: 5em;
+    display: grid;
+    gap: .5em;
+}
+
+.group{
+    position: relative;
+    --color: #5757577e;
+
+}
+
+.form-input{
+    width: 100%;
+    background: none;
+    color: #706c6c;
+    font-size: 1rem;
+    padding: .8em .3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--color);
+}
+
+.form-label{
+    color: var(--color);
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    
+}
+
+
+/*.formulario ul{
     list-style: none;
     padding: 0;
     margin: 0;
-
-    li{
-        padding-top: 0.5vh;
-        padding-bottom: 0.5vh;
-    }
-}
-
-.formulario .radioGroup{
-    display: flex;
-    flex-direction: row;
-}
-
-.formulario .radioLine{
-    padding-right: 2vw;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
 }
 
 input{
     width: 100%;
+}*/
+
+.title,
+.content {
+    margin: 30px 0px;
+    padding: 0 24px;
 }
 
-.title, .content{
-    margin: 9vh 0px;
-    /* margin: 50px 0px; */
-}
-
-.card{ 
-    display: inline-block; 
+.card {
+    display: inline-block;
     margin: 3rem 0rem;
 }
 
-.checkboxMenu{
-    display: grid;
-    grid-row-gap: 2vh;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+.img-zoom-container {
+    overflow: hidden;
 }
 
-.checkboxMenu .checkboxOption{
-    display: flex;
-    flex-direction: row;
+.img-zoom-container img {
+    transition: all 0.2s ease-out !important;
+}
 
-    input{
-        max-width: 10vw;
-        max-height: auto;
-    }
+.card:hover .img-zoom-container > img {
+    transform: scale(1.2);
+}
+
+
+.btn {
+    transition: all 0.2s ease-out !important;
+}
+.btn:hover {
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: #ffb007  !important;
 }
