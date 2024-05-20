@@ -1,9 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
+<<<<<<< HEAD
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+=======
+footer{
+    background-color: bisque;
+    height: 6.5vh;
+    margin: 0;
+    top: 50vh;
+>>>>>>> parent of 7358d7f (Revert "Merge branch 'main' of https://github.com/Caroep/proyectocac")
 }
 
 <<<<<<< HEAD
@@ -121,10 +129,16 @@ input{
 }*/
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .title,
 .content {
     margin: 30px 0px;
     padding: 0 24px;
+=======
+.title, .content{
+    margin: 9vh 0px;
+    /* margin: 50px 0px; */
+>>>>>>> parent of 7358d7f (Revert "Merge branch 'main' of https://github.com/Caroep/proyectocac")
 =======
 .title, .content{
     margin: 9vh 0px;
@@ -137,6 +151,7 @@ input{
     margin: 3rem 0rem;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 .img-zoom-container {
     overflow: hidden;
@@ -159,6 +174,8 @@ input{
     padding-right: 25px;
     background-color: #ffb007  !important;
 =======
+=======
+>>>>>>> parent of 7358d7f (Revert "Merge branch 'main' of https://github.com/Caroep/proyectocac")
 .checkboxMenu{
     display: grid;
     grid-row-gap: 2vh;
@@ -173,5 +190,8 @@ input{
         max-width: 10vw;
         max-height: auto;
     }
+<<<<<<< HEAD
+>>>>>>> parent of 7358d7f (Revert "Merge branch 'main' of https://github.com/Caroep/proyectocac")
+=======
 >>>>>>> parent of 7358d7f (Revert "Merge branch 'main' of https://github.com/Caroep/proyectocac")
 }
