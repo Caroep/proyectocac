@@ -147,7 +147,7 @@ input{
     flex-direction: row;
 
     input{
-        max-width: 10vw;
+        max-width: 10%;
         max-height: auto;
     }
 }

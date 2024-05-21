@@ -86,57 +86,57 @@
     <!-- Formulario -->
     <form onsubmit="validarFormulario()" method="post">
       <div class="formulario">
-        <ul>
-          <li>
-            <label for="name">Nombre</label>
-            <input type="text" class="name" id="name" placeholder="Nombre Completo" />
+        <ul class="form-container">
+          <li class="group">
+            <label for="name" class="form-label">Nombre</label>
+            <input type="text" class="name form-input" id="name" placeholder="" />
           </li>
-          <li>
-            <label for="phone">Teléfono</label>
-            <input type="number" class="phone" id="phone" placeholder="Número sin 0 y 15 ni guión" />
+          <li class="group">
+            <label for="phone" class="form-label">Teléfono</label>
+            <input type="number" class="phone form-input" id="phone" placeholder="" />
           </li>
-          <li>
-            <label for="mail">Correo electrónico</label>
-            <input type="email" class="mail" id="mail" placeholder="name@example.com" />
+          <li class="group">
+            <label for="mail" class="form-label">Correo electrónico</label>
+            <input type="email" class="mail form-input" id="mail" placeholder="" />
           </li>
-          <li>
+          <li class="group">
             <!-- Checkbox del formulario -->
-            <label>Selecciona los tratamientos deseados:</label>
+            <label class="form-label">Selecciona los tratamientos deseados:</label>
             <div class="checkboxMenu">
               <div class="checkboxOption">
-                <label for="t1">Tratamiento 1:</label>
+                <label for="t1" class="form-label">Tratamiento 1:</label>
                 <input type="checkbox" id="t1" name="t1" value="true">
               </div>
 
               <div class="checkboxOption">
-                <label for="t2">Tratamiento 2:</label>
+                <label for="t2" class="form-label">Tratamiento 2:</label>
                 <input type="checkbox" id="t2" name="t2" value="true">
               </div>
 
               <div class="checkboxOption">
-                <label for="t3">Tratamiento 3:</label>
+                <label for="t3" class="form-label">Tratamiento 3:</label>
                 <input type="checkbox" id="t3" name="t3" value="true">
               </div>
 
               <div class="checkboxOption">
-                <label for="t4">Tratamiento 4:</label>
+                <label for="t4" class="form-label">Tratamiento 4:</label>
                 <input type="checkbox" id="t4" name="t4" value="true">
               </div>
 
               <div class="checkboxOption">
-                <label for="t5">Tratamiento 5:</label>
+                <label for="t5" class="form-label">Tratamiento 5:</label>
                 <input type="checkbox" id="t5" name="t5" value="true">
               </div>
 
               <div class="checkboxOption">
-                <label for="t6">Tratamiento 6:</label>
+                <label for="t6" class="form-label">Tratamiento 6:</label>
                 <input type="checkbox" id="t6" name="t6" value="true">
               </div>
             </div>
           </li>
-          <li>
-            <label for="msg">Comentarios o preguntas</label>
-            <textarea id="msg" name="user_message" rows="3" style="width: 100%"></textarea>
+          <li class="group">
+            <label for="msg" class="form-label">Comentarios o preguntas</label>
+            <textarea id="msg" name="user_message" class="form-input" rows="3" style="width: 100%"></textarea>
           </li>
           <li class="button">
             <input type="submit">
