@@ -104,44 +104,44 @@
     </div>
   </div>
   <div>
-    <h3>Contactanos</h3>
+    <h2>Contactanos</h2>
     <form onsubmit="validarFormulario()" method="post">
       <div class="formulario">
-        <ul>
-          <li>
-            <label for="name">Nombre Completo</label>
-            <input type="text" class="name" id="name" placeholder="Nombre Completo" />
+        <ul class="form-container">
+          <li class="group">
+            <label for="name" class="form-label">Nombre Completo</label>
+            <input type="text" class="name form-input" id="name" placeholder="" />
           </li>
-          <li>
-            <label for="phone">Teléfono</label>
-            <input type="number" class="phone" id="phone" placeholder="Número sin 0 y 15 ni guión" />
+          <li class="group">
+            <label for="phone" class="form-label">Teléfono</label>
+            <input type="number" class="phone form-input" id="phone" placeholder="" />
           </li>
-          <li>
-            <label for="mail">Correo electrónico</label>
-            <input type="email" class="mail" id="mail" placeholder="name@example.com" />
+          <li class="group">
+            <label for="mail" class="form-label">Correo electrónico</label>
+            <input type="email" class="mail form-input" id="mail" placeholder="" />
           </li>
-          <li>
-            <label for="mail">Sucursal</label>
-            <select name="opciones">
-              <option value="opcion1">San Miguel de Tucumán</option>
-              <option value="opcion2">Yerba Buena</option>
+          <li class="group">
+            <label for="mail" class="form-label">Sucursal</label>
+            <select name="opciones" class="form-selector">
+              <option value="opcion1" class="option-selector">San Miguel de Tucumán</option>
+              <option value="opcion2" class="option-selector">Yerba Buena</option>
             </select>
           </li>
-          <li>
+          <li class="group">
             <div class="radioGroup">
               <div class="radioLine">
-                <label for="opcion1">Consulta</label>
+                <label for="opcion1" class="form-label">Consulta</label>
                 <input type="radio" id="opcion1" name="radioButton" value="consulta" checked>
               </div>
               <div class="radioLine">
-                <label for="opcion2">Reclamo</label>
+                <label for="opcion2" class="form-label">Reclamo</label>
                 <input type="radio" id="opcion2" name="radioButton" value="reclamo">
               </div>
             </div>
           </li>
-          <li>
-            <label for="msg">Comentarios o preguntas</label>
-            <textarea id="msg" name="user_message" rows="3" style="width: 100%"></textarea>
+          <li class="group">
+            <label for="msg" class="form-label">Observaciones</label>
+            <textarea id="msg" name="user_message" class="form-input" rows="3" style="width: 100%"></textarea>
           </li>
           <li class="button">
             <input type="submit">

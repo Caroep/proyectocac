@@ -1,15 +1,23 @@
-.navbar{
-    background-color: bisque;
+
+
+.navbar {
+    background-color: #EBD9B4;
+}
+
+body {
+    --bodyBGColor: #f9f8e7;
+    font-family: "Roboto", sans-serif;
+    background-color: var(--bodyBGColor);
+    background-image: radial-gradient(#3a2009 0.30000000000000004px, transparent 0.30000000000000004px), radial-gradient(#3a2009 0.30000000000000004px, #f9f8e7 0.30000000000000004px);
+    background-size: 12px 12px;
+    background-position: 0 0, 6px 6px;
 }
  
 footer{
-    background-color: bisque;
+    background-color: #EBD9B4;
     height: 6.5vh;
     margin: 0;
     top: 50vh;
-}
-
-footer{
     text-align: center;
 }
 
@@ -17,15 +25,68 @@ footer p{
     display: inline-block;
 }
 
-form{
-    width: 100%;
+form {
+    display: inline-flexbox;
+    width: 90%;
+    max-width: 400%;
+    padding: 2em 3em;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px rgb(0,0, 0 / 30%);
+    text-align: justify;
 }
 
-form {
-    padding: 1em;
-    border: 0.5vw solid #ccc;
-    border-radius: 1em;
-  }
+
+
+.form-container{
+    margin-top: 5em;
+    display: grid;
+    gap: .5em;
+}
+
+.group{
+    position: relative;
+    --color: #5757577e;
+
+}
+
+.form-input{
+    width: 100%;
+    background: none;
+    color: #706c6c;
+    font-size: 1rem;
+    padding: .8em .3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--color);
+}
+
+.form-selector{
+    background: none;
+    color: #706c6c;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    border-bottom: 1px groove var(--color);
+}
+
+.option-selector{
+    background-color: var(--bodyBGColor);
+    color: #706c6c;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0;
+    outline: none;
+}
+
+.form-label{
+    color: #2b2b2b7e;
+
+    position: relative;
+    /* top: -1vh; */
+    padding-bottom: 0vh;
+    padding-right: 1vw;
+}
+
 
 .formulario ul{
     list-style: none;
@@ -50,6 +111,12 @@ form {
     align-items: center;
 }
 
+.title{
+    font-size: 3rem;
+    margin-bottom: .5em;
+
+}
+
 input{
     width: 100%;
 }
@@ -59,8 +126,13 @@ input{
     /* margin: 50px 0px; */
 }
 
-.card{ 
-    display: inline-block; 
+.title,
+.content {
+    margin: 30px 0px;
+}
+
+.card {
+    display: inline-block;
     margin: 3rem 0rem;
 }
 
