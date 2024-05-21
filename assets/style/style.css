@@ -79,3 +79,23 @@ input{
         max-height: auto;
     }
 }
+
+.img-zoom-container {
+    overflow: hidden;
+}
+
+.img-zoom-container img {
+    transition: all 0.2s ease-out !important;
+}
+
+.card:hover .img-zoom-container > img {
+    transform: scale(1.2);
+}
+
+.btn {
+    transition: all 0.2s ease-out !important;
+}
+.btn:hover {
+    padding-left: 25px;
+    padding-right: 25px;
+}
