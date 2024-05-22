@@ -11,7 +11,9 @@ body {
     background-image: radial-gradient(#3a2009 0.30000000000000004px, transparent 0.30000000000000004px), radial-gradient(#3a2009 0.30000000000000004px, #f9f8e7 0.30000000000000004px);
     background-size: 12px 12px;
     background-position: 0 0, 6px 6px;
+    
 }
+
  
 footer{
     background-color: #EBD9B4;
@@ -19,7 +21,7 @@ footer{
     margin: 0;
     top: 50vh;
     text-align: center;
-}
+    }
 
 footer p{
     display: inline-block;
@@ -170,4 +172,37 @@ input{
 .btn:hover {
     padding-left: 25px;
     padding-right: 25px;
+}
+
+/* Para dispositivos pequeños, como teléfonos */
+@media (max-width: 600px) {
+    .navbar{
+        background-color: #c890ed;
+    }
+    footer{
+        background-color: #c890ed;
+ 
+    }
+    
+}
+
+/* Para dispositivos medianos, como tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .navbar{
+        background-color: #d88191;
+    }
+    footer{
+        background-color: #d88191;
+
+    }
+}
+
+/* Para dispositivos grandes, como laptops y desktops */
+@media (min-width: 1025px) {
+    .navbar{
+        background-color: #90a3ed;
+    }
+    footer{
+        background-color: #90a3ed;
+    }
 }
