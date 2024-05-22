@@ -241,6 +241,7 @@ input {
     .card {
         width: 80vw;
     }
+    
 
 }
 
@@ -265,6 +266,11 @@ input {
     .card {
         width: 30vw;
     }
+
+    .formulario{
+        width: 100%;
+
+    }
 }
 
 /* Para dispositivos grandes, como laptops y desktops */
@@ -272,6 +278,11 @@ input {
     /* .navbar {
         background-color: #90a3ed;
     } */
+
+    .formulario{
+        width: 100%;
+
+    }
 
     footer {
         font-size: 1vw;
