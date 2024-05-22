@@ -6,6 +6,11 @@
     font-family: var(--fuentePag);
 }
 
+.navbar img{
+    height: 7vh;
+    width: auto;
+}
+
 body {
 
     --fuentePag: "Reddit Mono", monospace;
