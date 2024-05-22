@@ -1,57 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
 
 
 .navbar {
     background-color: #EBD9B4;
+    font-family: var(--fuentePag);
 }
 
 body {
+
+    --fuentePag: "Reddit Mono", monospace;
     --bodyBGColor: #f9f8e7;
-    font-family: "Roboto", sans-serif;
+    font-family: var(--fuentePag);
     background-color: var(--bodyBGColor);
     background-image: radial-gradient(#3a2009 0.30000000000000004px, transparent 0.30000000000000004px), radial-gradient(#3a2009 0.30000000000000004px, #f9f8e7 0.30000000000000004px);
     background-size: 12px 12px;
     background-position: 0 0, 6px 6px;
-    
 }
 
- 
-footer{
+h1,
+h2 {
+    font-family: "Reddit Mono", monospace;
+}
+
+
+footer {
+    font-family: "Reddit Mono", monospace;
     background-color: #EBD9B4;
-    height: 6.5vh;
+    height: 8.5vh;
     margin: 0;
     top: 50vh;
     text-align: center;
-    }
+    font-size: 2.3vw;
+}
 
-footer p{
+footer img{
+    width: 8vh;
+    height: auto;
+}
+
+footer p {
     display: inline-block;
 }
 
 form {
-    display: inline-flexbox;
+    display: inline-flex;
     width: 90%;
     max-width: 400%;
     padding: 2em 3em;
     border-radius: 10px;
-    box-shadow: 0 5px 10px -5px rgb(0,0, 0 / 30%);
+    box-shadow: 0 5px 10px -5px rgb(0, 0, 0 / 30%);
     text-align: justify;
 }
 
 
 
-.form-container{
+.form-container {
     margin-top: 5em;
     display: grid;
     gap: .5em;
 }
 
-.group{
+.group {
+    display: flex;
+    flex-direction: column;
     position: relative;
     --color: #5757577e;
 
 }
 
-.form-input{
+.form-input {
+    font-family: var(--fuentePag);
     width: 100%;
     background: none;
     color: #706c6c;
@@ -62,7 +80,7 @@ form {
     border-bottom: 1px solid var(--color);
 }
 
-.form-selector{
+.form-selector {
     background: none;
     color: #706c6c;
     font-size: 1rem;
@@ -71,7 +89,7 @@ form {
     border-bottom: 1px groove var(--color);
 }
 
-.option-selector{
+.option-selector {
     background-color: var(--bodyBGColor);
     color: #706c6c;
     font-size: 1rem;
@@ -80,9 +98,9 @@ form {
     outline: none;
 }
 
-.form-label{
+.form-label {
     color: #2b2b2b7e;
-
+    font-family: var(--fuentePag);
     position: relative;
     /* top: -1vh; */
     padding-bottom: 0vh;
@@ -90,42 +108,42 @@ form {
 }
 
 
-.formulario ul{
+.formulario ul {
     list-style: none;
     padding: 0;
     margin: 0;
 
-    li{
-        padding-top: 0.5vh;
-        padding-bottom: 0.5vh;
-    }
 }
 
-.formulario .radioGroup{
+.formulario ul li {
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+}
+
+.formulario .radioGroup {
     display: flex;
     flex-direction: row;
 }
 
-.formulario .radioLine{
+.formulario .radioLine {
     padding-right: 2vw;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.title{
+.title {
     font-size: 3rem;
     margin-bottom: .5em;
-
 }
 
-input{
+input {
     width: 100%;
 }
 
-.title, .content{
+.title,
+.content {
     margin: 9vh 0px;
-    /* margin: 50px 0px; */
 }
 
 .title,
@@ -138,20 +156,19 @@ input{
     margin: 3rem 0rem;
 }
 
-.checkboxMenu{
+.checkboxMenu {
     display: grid;
     grid-row-gap: 2vh;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
 
-.checkboxMenu .checkboxOption{
+.checkboxMenu .checkboxOption {
     display: flex;
     flex-direction: row;
+}
 
-    input{
-        max-width: 10%;
-        max-height: auto;
-    }
+.checkboxMenu .checkboxOption input {
+    max-width: 10%;
 }
 
 .img-zoom-container {
@@ -162,13 +179,14 @@ input{
     transition: all 0.2s ease-out !important;
 }
 
-.card:hover .img-zoom-container > img {
+.card:hover .img-zoom-container>img {
     transform: scale(1.2);
 }
 
 .btn {
     transition: all 0.2s ease-out !important;
 }
+
 .btn:hover {
     padding-left: 25px;
     padding-right: 25px;
@@ -176,33 +194,86 @@ input{
 
 /* Para dispositivos pequeños, como teléfonos */
 @media (max-width: 600px) {
-    .navbar{
+    /* .navbar{
         background-color: #c890ed;
     }
     footer{
         background-color: #c890ed;
- 
+    } */
+
+    body h1 {
+        font-size: 5.7vw;
     }
-    
+
+    body h2 {
+        font-size: 5vw;
+    }
+
+    .form-label {
+        font-size: 3.5vw;
+    }
+
+    .form-selector {
+        font-size: 3vw;
+    }
+
+    .option-selector {
+        font-size: 3vw;
+    }
+
+    .formulario .group {
+        align-items: center;
+
+    }
+
+    .card-body .card-title {
+        font-size: 3.5vw;
+    }
+
+    .card-body .card-text {
+        font-size: 3vw;
+    }
+
+    .card-body .btn {
+        font-size: 3vw;
+    }
+
+    .card {
+        width: 80vw;
+    }
+
 }
 
 /* Para dispositivos medianos, como tablets */
 @media (min-width: 601px) and (max-width: 1024px) {
-    .navbar{
+    /* .navbar{
         background-color: #d88191;
     }
     footer{
         background-color: #d88191;
+    } */
 
+    body h1 {
+        font-size: 4vw;
+    }
+
+    body h2 {
+        font-size: 3.7vw;
+    }
+
+
+    .card {
+        width: 30vw;
     }
 }
 
 /* Para dispositivos grandes, como laptops y desktops */
 @media (min-width: 1025px) {
-    .navbar{
+    /* .navbar {
         background-color: #90a3ed;
-    }
-    footer{
-        background-color: #90a3ed;
+    } */
+
+    footer {
+        font-size: 1.5vw;
     }
 }
