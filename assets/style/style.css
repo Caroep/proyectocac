@@ -22,9 +22,11 @@ body {
     background-position: 0 0, 6px 6px;
 }
 
+
 h1,
 h2 {
     font-family: "Reddit Mono", monospace;
+    padding: 15px;
 }
 
 
@@ -56,8 +58,6 @@ form {
     box-shadow: 0 5px 10px -5px rgb(0, 0, 0 / 30%);
     text-align: justify;
 }
-
-
 
 .form-container {
     margin-top: 5em;
@@ -154,12 +154,40 @@ input {
 .title,
 .content {
     margin: 30px 0px;
+    padding: 15px;
 }
 
 .card {
+    padding: 1.75rem;
+    border-radius: 1.75rem;
     display: inline-block;
-    margin: 3rem 0rem;
+    flex-wrap: wrap;
 }
+
+.card .card-header{
+    flex-basis: 100%;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.card .card-body{
+    flex: basis 100%;
+    margin-top: 1.2rem;
+    text-align: center;
+}
+
+
+.card-container{
+    padding: 2rem 5rem;
+    width: auto;
+}
+
+.card-section{
+    display: grid;
+    gap: 1.75rem;
+    grid-template-columns: repeat(auto-fill,minmax(280px,1fr));
+}
+
 
 .checkboxMenu {
     display: grid;
@@ -231,7 +259,7 @@ input {
 
     }
 
-    .card-body .card-title {
+   /* .card-body .card-title {
         font-size: 3.5vw;
     }
 
@@ -245,7 +273,7 @@ input {
 
     .card {
         width: 80vw;
-    }
+    }*/
     
 
 }
@@ -268,9 +296,9 @@ input {
     }
 
 
-    .card {
+   /* .card {
         width: 30vw;
-    }
+    }*/
 
     .formulario{
         width: 100%;
