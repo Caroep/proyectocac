@@ -171,9 +171,14 @@ input {
 }
 
 .card .card-body{
+    width: 100%;
     flex: basis 100%;
     margin-top: 1.2rem;
     text-align: center;
+}
+
+.card .card-body img{
+    width: 90%;
 }
 
 
