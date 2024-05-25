@@ -51,13 +51,15 @@ footer p {
 
 form {
     display: inline-flex;
-    width: 90%;
+    width: 70%;
     max-width: 400%;
     padding: 2em 3em;
     border-radius: 10px;
     box-shadow: 0 5px 10px -5px rgb(0, 0, 0 / 30%);
     text-align: justify;
 }
+
+
 
 .form-container {
     margin-top: 5em;
@@ -161,7 +163,7 @@ input {
     padding: 1.75rem;
     border-radius: 1.75rem;
     display: inline-block;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 .card .card-header{
@@ -228,6 +230,19 @@ input {
 .btn:hover {
     padding-left: 25px;
     padding-right: 25px;
+}
+
+.form-with-img{
+    display: flex;
+    flex-direction: row;
+}
+
+.form-with-img img{
+    width: 30%;
+    height: auto; 
+    object-fit:cover;
+    opacity: 0.9;
+    
 }
 
 /* Para dispositivos pequeños, como teléfonos */
