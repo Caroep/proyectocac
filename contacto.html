@@ -71,11 +71,15 @@
     </button>
   </div>
   <h2>Sucursales</h2>
+
+  <!-- Animación en Imágenes de las cards -->
   <div class="card-container">
     <section class="card-section">
       <div class="card">
         <div class="card-body">
-          <img src="assets/img/sucursal1.jpg" class="card-img-top" alt="...">
+          <div class="img-zoom-container">
+            <img src="assets/img/sucursal1.jpg" class="card-img-top" alt="...">
+          </div>
           <h4 class="card-title">San Miguel de Tucumán</h4>
           <p class="card-text">
             Calle 24 de Septiembre 1045, Piso 2,
@@ -88,7 +92,9 @@
       </div>
       <div class="card">
         <div class="card-body">
-          <img src="assets/img/sucursal2.jpg" class="card-img-top" alt="...">
+          <div class="img-zoom-container">
+            <img src="assets/img/sucursal2.jpg" class="card-img-top" alt="...">
+          </div>
           <h4 class="card-title">Yerba Buena</h4>
           <p class="card-text">
             Avenida Aconquija 2050,
@@ -101,7 +107,9 @@
       </div>
       <div class="card">
         <div class="card-body">
-          <img src="assets/img/sucursal3.jpg" class="card-img-top" alt="...">
+          <div class="img-zoom-container">
+            <img src="assets/img/sucursal3.jpg" class="card-img-top" alt="...">
+          </div>
           <h4 class="card-title">Tafi Viejo</h4>
           <p class="card-text">
             Congreso 2020,
@@ -117,6 +125,7 @@
   <div>
     <h2>Contactanos</h2>
     <div class="form-with-img">
+      <!-- Formulario -->
       <form onsubmit="validarFormulario()" method="post">
         <div class="formulario">
           <ul class="form-container">
@@ -132,6 +141,7 @@
               <label for="mail" class="form-label">Correo electrónico</label>
               <input type="email" class="mail form-input" id="mail" placeholder="" />
             </li>
+            <!-- Select -->
             <li class="group">
               <label for="mail" class="form-label">Sucursal</label>
               <select name="opciones" class="form-selector">
@@ -139,6 +149,7 @@
                 <option value="opcion2" class="option-selector">Yerba Buena</option>
               </select>
             </li>
+            <!-- Radio -->
             <li class="group">
               <div class="radioGroup">
                 <div class="radioLine">
@@ -161,6 +172,7 @@
           </ul>
         </div>
       </form>
+      <!-- Imagen -->
       <img src="assets/img/estetica3.jpg" alt="Logo Estetica" />
     </div>
   </div>

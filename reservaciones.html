@@ -41,13 +41,8 @@
         alert("Información enviada correctamente")
       }
     }
-
   </script>
-
 </head>
-
-
-
 
 <body>
 
@@ -86,6 +81,7 @@
   <div>
 
     <!-- Formulario -->
+    <!-- El Form que cumple con todos los requisitos del TP es el de "Contacto" -->
     <form onsubmit="validarFormulario()" method="post">
       <div class="formulario">
         <ul class="form-container">
@@ -93,6 +89,7 @@
             <label for="name" class="form-label">Nombre</label>
             <input type="text" class="name form-input" id="name" placeholder="" />
           </li>
+          <!-- En JS se valida que exista al menos un método de contacto. O Mail O Correo O Ambos. Si se ha brindado al menos un medio de contacto, el formulario se enviará correctamente -->
           <li class="group">
             <label for="phone" class="form-label">Teléfono</label>
             <input type="tel" class="phone form-input" id="phone" placeholder="" />
