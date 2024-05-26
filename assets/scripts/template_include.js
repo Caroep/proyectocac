@@ -1,27 +1,55 @@
-function includeHTML() {
-    var z, i, elmnt, file, xhttp;
-    /* Loop through a collection of all HTML elements: */
-    z = document.getElementsByTagName("*");
-    for (i = 0; i < z.length; i++) {
-      elmnt = z[i];
-      /*search for elements with a certain atrribute:*/
-      file = elmnt.getAttribute("include-html");
-      if (file) {
-        /* Make an HTTP request using the attribute value as the file name: */
-        xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function() {
+function includeNavbar() {
+  var elements, i, elmnt, xhttp;
+  /* Loop through a collection of all elements with the class "render-navbar": */
+  elements = document.getElementsByClassName("render-navbar");
+  for (i = 0; i < elements.length; i++) {
+      elmnt = elements[i];
+      /* Make an HTTP request to get the "navbar.html" file: */
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
           if (this.readyState == 4) {
-            if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-            if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-            /* Remove the attribute, and call this function once more: */
-            elmnt.removeAttribute("include-html");
-            includeHTML();
+              if (this.status == 200) {
+                  elmnt.innerHTML = this.responseText;
+              }
+              if (this.status == 404) {
+                  elmnt.innerHTML = "Page not found.";
+              }
+              /* Remove the class after the content is loaded to prevent reprocessing: */
+              elmnt.classList.remove("render-navbar");
+              includeHTML();
           }
-        }
-        xhttp.open("GET", file, true);
-        xhttp.send();
-        /* Exit the function: */
-        return;
-      }
-    }
-  } 
+      };
+      xhttp.open("GET", "assets/templates/navbar.html", true);
+      xhttp.send();
+      /* Exit the function to prevent multiple requests for the same elements: */
+      return;
+  }
+}
+
+function includeFooter() {
+  var elements, i, elmnt, xhttp;
+  /* Loop through a collection of all elements with the class "render-navbar": */
+  elements = document.getElementsByClassName("render-footer");
+  for (i = 0; i < elements.length; i++) {
+      elmnt = elements[i];
+      /* Make an HTTP request to get the "navbar.html" file: */
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+          if (this.readyState == 4) {
+              if (this.status == 200) {
+                  elmnt.innerHTML = this.responseText;
+              }
+              if (this.status == 404) {
+                  elmnt.innerHTML = "Page not found.";
+              }
+              /* Remove the class after the content is loaded to prevent reprocessing: */
+              elmnt.classList.remove("render-footer");
+              includeHTML();
+          }
+      };
+      xhttp.open("GET", "assets/templates/footer.html", true);
+      xhttp.send();
+      /* Exit the function to prevent multiple requests for the same elements: */
+      return;
+  }
+}

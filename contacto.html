@@ -44,7 +44,7 @@
 <body>
 
   <!-- Incluir Navbar -->
-  <div include-html="assets/templates/navbar.html"></div>
+  <div class="render-navbar"></div>
 
   <div id="carousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
@@ -81,11 +81,9 @@
             Calle 24 de Septiembre 1045, Piso 2,
             Consultorio 102.
           <p><i class="fa-solid fa-envelope-open"></i> spacbsmtuc@spa.com.ar.</p>
-          </p>
-          <iframe
+          <iframe class="iframe-maps"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.339160447767!2d-65.21553292483787!3d-26.829162889717544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c13428c4039%3A0x3fabbe37ecd21d44!2sAv.%2024%20de%20Septiembre%201045%2C%20T4000CNU%20San%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses-419!2sar!4v1716516541449!5m2!1ses-419!2sar"
-            width="90%" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
       <div class="card">
@@ -96,11 +94,9 @@
             Avenida Aconquija 2050,
             Consultorio 503.
           <p><i class="fa-solid fa-envelope-open"></i> spacbsmyb@spa.com.ar</p>
-          </p>
-          <iframe
+          <iframe class="iframe-maps"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.866240017897!2d-65.30275282483856!3d-26.812387389018927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942242d985af4273%3A0x208b670883e875b9!2sAv.%20Aconquija%202050%2C%20T4107CEU%20Yerba%20Buena%2C%20Tucum%C3%A1n!5e0!3m2!1ses-419!2sar!4v1716516674450!5m2!1ses-419!2sar"
-            width="90%" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
       <div class="card">
@@ -111,11 +107,9 @@
             Congreso 2020,
             Consultorio 3.
           <p><i class="fa-solid fa-envelope-open"></i> spacbsmtv@spa.com.ar</p>
-          </p>
-          <iframe
+          <iframe class="iframe-maps"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.4126461528626!2d-65.2119469248366!3d-26.858627790945615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225bec3048b127%3A0xe112fcf1ec2fe9f7!2sCongreso%20de%20Tucum%C3%A1n%202020%2C%20San%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses-419!2sar!4v1716528364392!5m2!1ses-419!2sar"
-            width="90%" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </section>
@@ -167,7 +161,7 @@
           </ul>
         </div>
       </form>
-      <img src="assets/img/estetica3.jpg" alt="Logo Estetica"/>
+      <img src="assets/img/estetica3.jpg" alt="Logo Estetica" />
     </div>
   </div>
 
@@ -179,10 +173,11 @@
     crossorigin="anonymous"></script>
 
   <!-- Incluir Footer -->
-  <footer include-html="assets/templates/footer.html"></footer>
+  <footer class="render-footer"></footer>
 
   <!-- Llamar a función que incluye los templates -->
-  <script>includeHTML()</script>
+  <script>includeNavbar()</script>
+  <script>includeFooter()</script>
 </body>
 
 

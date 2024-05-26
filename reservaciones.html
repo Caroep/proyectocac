@@ -52,7 +52,7 @@
 <body>
 
   <!-- Incluir Base de Navbar -->
-  <div include-html="assets/templates/navbar.html"></div>
+  <div class="render-navbar"></div>
 
   <!-- Carousel con Bootstrap -->
   <div id="carousel" class="carousel slide" data-bs-ride="carousel">
@@ -156,10 +156,12 @@
     crossorigin="anonymous"></script>
 
   <!-- Incluir Footer -->
-  <footer include-html="assets/templates/footer.html"></footer>
+  <footer class="render-footer"></footer>
 
   <!-- Llamar a función que incluye los templates -->
-  <script>includeHTML()</script>
+  
+  <script>includeNavbar()</script>
+  <script>includeFooter()</script>
 </body>
 
 

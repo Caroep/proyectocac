@@ -174,7 +174,7 @@ input {
 
 .card .card-body{
     width: 100%;
-    flex: basis 100%;
+    flex: 100%;
     margin-top: 1.2rem;
     text-align: center;
 }
@@ -243,6 +243,10 @@ input {
     object-fit:cover;
     opacity: 0.9;
     
+}
+
+.iframe-maps{
+    width: 90%;
 }
 
 /* Para dispositivos pequeños, como teléfonos */
